@@ -1,0 +1,5 @@
+config SHIELD_COSMOTYL_HIGH_LEFT
+    def_bool $(shields_list_contains,cosmotyl_high_left)
+
+config SHIELD_COSMOTYL_HIGH_RIGHT
+    def_bool $(shields_list_contains,cosmotyl_high_right)
