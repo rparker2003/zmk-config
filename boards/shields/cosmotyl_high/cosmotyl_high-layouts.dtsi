@@ -13,11 +13,55 @@
         // Edit this to define the positions and sizes of the keys, or remove it
         // if your keyboard will not support ZMK Studio.
         // https://zmk.dev/docs/development/hardware-integration/physical-layouts#optional-keys-property
-        keys  //                     w   h    x    y     rot    rx    ry
-            = <&key_physical_attrs 100 100    0    0       0     0     0>
-            , <&key_physical_attrs 100 100  100    0       0     0     0>
-            , <&key_physical_attrs 100 100    0  100       0     0     0>
-            , <&key_physical_attrs 100 100  100  100       0     0     0>
+        keys  //                     w   h    x    y   rot   rx   ry
+            = <&key_physical_attrs 100 100    0    0    0    0    0>   // LKey 1
+            , <&key_physical_attrs 100 100  100    0    0    0    0>   // LKey 2
+            , <&key_physical_attrs 100 100  200    0    0    0    0>   // LKey 3
+            , <&key_physical_attrs 100 100    0  100    0    0    0>   // LKey 4
+            , <&key_physical_attrs 100 100  100  100    0    0    0>   // LKey 5
+            , <&key_physical_attrs 100 100  200  100    0    0    0>   // LKey 6
+            , <&key_physical_attrs 100 100    0  200    0    0    0>   // LKey 7
+            , <&key_physical_attrs 100 100  100  200    0    0    0>   // LKey 8
+            , <&key_physical_attrs 100 100  200  200    0    0    0>   // LKey 9
+            , <&key_physical_attrs 100 100    0  300    0    0    0>   // LKey 10
+            , <&key_physical_attrs 100 100  100  300    0    0    0>   // LKey 11
+            , <&key_physical_attrs 100 100  200  300    0    0    0>   // LKey 12
+            , <&key_physical_attrs 100 100  300    0    0    0    0>   // LKey 13
+            , <&key_physical_attrs 100 100  400    0    0    0    0>   // LKey 14
+            , <&key_physical_attrs 100 100  500    0    0    0    0>   // LKey 15
+            , <&key_physical_attrs 100 100  300  100    0    0    0>   // LKey 16
+            , <&key_physical_attrs 100 100  400  100    0    0    0>   // LKey 17
+            , <&key_physical_attrs 100 100  500  100    0    0    0>   // LKey 18
+            , <&key_physical_attrs 100 100  300  200    0    0    0>   // LKey 19
+            , <&key_physical_attrs 100 100  400  200    0    0    0>   // LKey 20
+            , <&key_physical_attrs 100 100  500  200    0    0    0>   // LKey 21
+            , <&key_physical_attrs 100 100  300  300    0    0    0>   // LKey 22
+            , <&key_physical_attrs 100 100  400  300    0    0    0>   // LKey 23
+            , <&key_physical_attrs 100 100  500  300    0    0    0>   // LKey 24
+            , <&key_physical_attrs 100 100  600    0    0    0    0>   // RKey 1
+            , <&key_physical_attrs 100 100  700    0    0    0    0>   // RKey 2
+            , <&key_physical_attrs 100 100  800    0    0    0    0>   // RKey 3
+            , <&key_physical_attrs 100 100  600  100    0    0    0>   // RKey 4
+            , <&key_physical_attrs 100 100  700  100    0    0    0>   // RKey 5
+            , <&key_physical_attrs 100 100  800  100    0    0    0>   // RKey 6
+            , <&key_physical_attrs 100 100  600  200    0    0    0>   // RKey 7
+            , <&key_physical_attrs 100 100  700  200    0    0    0>   // RKey 8
+            , <&key_physical_attrs 100 100  800  200    0    0    0>   // RKey 9
+            , <&key_physical_attrs 100 100  600  300    0    0    0>   // RKey 10
+            , <&key_physical_attrs 100 100  700  300    0    0    0>   // RKey 11
+            , <&key_physical_attrs 100 100  800  300    0    0    0>   // RKey 12
+            , <&key_physical_attrs 100 100  900    0    0    0    0>   // RKey 13
+            , <&key_physical_attrs 100 100 1000    0    0    0    0>   // RKey 14
+            , <&key_physical_attrs 100 100 1100    0    0    0    0>   // RKey 15
+            , <&key_physical_attrs 100 100  900  100    0    0    0>   // RKey 16
+            , <&key_physical_attrs 100 100 1000  100    0    0    0>   // RKey 17
+            , <&key_physical_attrs 100 100 1100  100    0    0    0>   // RKey 18
+            , <&key_physical_attrs 100 100  900  200    0    0    0>   // RKey 19
+            , <&key_physical_attrs 100 100 1000  200    0    0    0>   // RKey 20
+            , <&key_physical_attrs 100 100 1100  200    0    0    0>   // RKey 21
+            , <&key_physical_attrs 100 100  900  300    0    0    0>   // RKey 22
+            , <&key_physical_attrs 100 100 1000  300    0    0    0>   // RKey 23
+            , <&key_physical_attrs 100 100 1100  300    0    0    0>   // RKey 24
             ;
     };
 };

@@ -10,10 +10,88 @@
     keymap {
         compatible = "zmk,keymap";
 
-        default_layer {
+        default_layer { // Layer 0
             bindings = <
-                &kp N1 &kp N2    &kp N3 &kp N4
-                &kp A  &kp B     &kp C  &kp D
+                &kp ESCAPE    &kp Q        &kp W         &kp E    &kp R      &kp T
+                &kp TAB       &kp A        &kp S         &kp D    &kp F      &kp G
+                &kp LGUI      &kp Z        &kp X         &kp C    &kp V      &kp B
+                &none         &kp MINS     &mt LALT EQL  &mo 4    &sk LSHIFT &sk LCTL
+
+                &kp Y         &kp U        &kp I         &kp O    &kp P      &kp BACKSPACE
+                &kp H         &kp J        &kp K         &kp L    &kp SCLN   &kp ENTER
+                &kp N         &kp M        &kp COMM      &kp DOT  &kp SLSH   &kp QUOT
+                &sk LALT      &mt 4 SPC    &mo 3         &kp LBRC &kp RBRC   &none
+            >;
+        };
+
+        layer1 {
+            bindings = <
+                &kp ESCAPE    &kp Q        &kp W         &kp F    &kp P      &kp B
+                &kp TAB       &kp A        &kp R         &kp S    &kp T      &kp G
+                &kp LGUI      &kp Z        &kp X         &kp C    &kp D      &kp V
+                &none         &kp MINS     &mt LALT EQL  &mo 4    &sk LSHIFT &sk LCTL
+
+                &kp J         &kp L        &kp U         &kp Y    &kp SCLN   &kp BACKSPACE
+                &kp M         &kp N        &kp E         &kp I    &kp O      &kp ENTER
+                &kp K         &kp H        &kp COMM      &kp DOT  &kp SLSH   &kp QUOT
+                &sk LALT      &mt 4 SPC    &mo 3         &kp LBRC &kp RBRC   &none
+            >;
+        };
+
+        layer2 {
+            bindings = <
+                &kp ESCAPE    &kp TAB      &kp Q         &kp W    &kp E      &kp R
+                &kp CAPSLOCK  &kp LSHIFT   &kp A         &kp S    &kp D      &kp F
+                &kp G         &kp LCTL     &kp Z         &kp X    &kp C      &kp V
+                &none         &kp B        &kp LALT      &mo 3    &kp SPC    &mo 4
+
+                &none         &none        &kp L         &none    &none      &kp BACKSPACE
+                &none         &none        &none         &none    &none      &none
+                &none         &none        &none         &none    &none      &none
+                &none         &none        &mo 3         &none    &none      &none
+                i
+            >;
+        };
+
+        layer3 {
+            bindings = <
+                &kp S(KC_GRV) &kp S(KC_1)  &kp S(KC_2)  &kp S(KC_3)  &kp S(KC_4) &kp S(KC_5)
+                &kp KC_GRV    &kp KC_1     &kp KC_2     &kp KC_3     &kp KC_4    &kp KC_5
+                &kp F12       &kp F1       &kp F2       &kp F3       &kp F4      &kp F5
+                &none         &none        &none        &to 0        &to 1       &to 2
+
+                &kp S(KC_6)   &kp S(KC_7)  &kp S(KC_8)  &kp S(KC_9)  &kp S(KC_0) &kp S(KC_BSLS)
+                &kp KC_6      &kp KC_7     &kp KC_8     &kp KC_9     &kp KC_0    &kp KC_BSLS
+                &kp F6        &kp F7       &kp F8       &kp F9       &kp F10     &kp F11
+                &none         &none        &none        &kp S(KC_9)  &kp S(KC_0) &none
+            >;
+        };
+
+        layer4 {
+            bindings = <
+                &none        &none         &none        &kp UP       &none        &kp PGUP
+                &none        &none         &kp LEFT     &kp DOWN     &kp RGHT     &kp HOME
+                &none        &kp MPRV      &kp MNXT     &kp MPLY     &kp MUTE     &kp INS
+                &none        &kp VOLD      &kp VOLU     &none        &none        &none
+
+                &kp PGDN     &none         &none        &none        &none        &none
+                &kb END      &kp H         &kp J        &kp K        &kp L        &kp CAPSLOCK
+                &kp DEL      &none        &none         &none        &none        &none
+                &none        &none         &none        &none        &none        &none
+            >;
+        };
+
+        layer5 {
+            bindings = <
+                &none        &none         &none        &none        &none        &none
+                &none        &none         &none        &none        &none        &none
+                &none        &none         &none        &none        &none        &none
+                &none        &none         &none        &none        &none        &none
+
+                &none        &none         &none        &none        &none        &none
+                &none        &none         &none        &none        &none        &none
+                &none        &none         &none        &none        &none        &none
+                &none        &none         &none        &none        &none        &none
             >;
         };
     };
